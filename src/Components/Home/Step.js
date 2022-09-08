@@ -37,7 +37,7 @@ const StepP = () => {
 
   return (
     <>
-      <Steps current={current} className="steps" responsive="true">
+      <Steps current={current} className="steps" responsive>
         {steps.map((item) => (
           <Step key={item.title} title={item.title} />
         ))}

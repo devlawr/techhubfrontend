@@ -1,25 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { resetState } from "../../features/regSlice";
 import Navigation from "../Navigation";
-import leftImg from "../images/visual.jpg";
+import leftImg from "../../images/visual.jpg";
 import StepP from "./Step";
+import Skills from "../skills/skils";
+import Footer from "../Footer/Footer";
 
+import Wrapper from "../Wrapper/Wrapper";
+import { data } from "../../content_option";
+import "./Home.css";
 const Home = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  useEffect(() => {
+    navigate("/");
+
+    dispatch(resetState());
+  }, [dispatch, navigate]);
   return (
     <div>
-      <div className="container">
-        <div className="backdrop"></div>
-        <Navigation />
-
-        <div className="brilliance">
-          <p>connecting opportunity with experience</p>
-        </div>
-        <div className="join">
-          <p>Join TECHHUB. the training ground for Technologist</p>
-        </div>
-        <div className="joinus">
-          <p>Join us</p>
-        </div>
-      </div>
+      <Navigation />
+      <Wrapper experience={data.experience} join={data.join} word={data.word} />
       <main>
         <div className="first-section">
           <div className="launch">
@@ -75,6 +78,14 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section>
+        <Skills />
+      </section>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };
