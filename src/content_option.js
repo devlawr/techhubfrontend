@@ -17,7 +17,8 @@ const data = {
   join: "Join TECHHUB. the training ground for Technologist",
   mission: "Our mission is to connect brilliance with opportunity",
   race: "Irrespective of race, gender, and geography.",
-  word:"Join Us"
+  word:"Join Us",
+  session:'Book a free session'
 };
 
 

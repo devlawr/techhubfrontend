@@ -22,7 +22,12 @@ const Home = () => {
   return (
     <div>
       <Navigation />
-      <Wrapper experience={data.experience} join={data.join} word={data.word} />
+      <Wrapper
+        experience={data.experience}
+        session={data.session}
+        join={data.join}
+        word={data.word}
+      />
       <main>
         <div className="first-section">
           <div className="launch">

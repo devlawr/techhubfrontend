@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 import {
   AppstoreOutlined,
@@ -28,15 +28,14 @@ const items = [
   getItem(<Link to="/about">About Us</Link>, "3", <ContainerOutlined />),
   getItem(<Link to="/contact">Contact US</Link>, "4", <ContainerOutlined />),
 
-  getItem("Courses", "sub1", <MailOutlined />, [
-    getItem('Html & Css', "5"),
-    getItem("Javascript", "6"),
-    getItem("ReactJs", "7"),
-    getItem("Devops", "8"),
+  getItem(<Link to="/html">Courses</Link>, "sub1", <MailOutlined />, [
+    getItem(<Link to="/html">Html & Css</Link>, "5"),
+    getItem(<Link to="/course">Javascript</Link>, "6"),
+    getItem(<Link to="/course">React Js</Link>, "7"),
+    getItem(<Link to="/course">Dev ops</Link>, "8"),
   ]),
-  getItem("Designs", "sub2", <AppstoreOutlined />, [
-    getItem("UI/UX", "9"),
-    getItem("UI", "10"),
+  getItem(<Link to="/course">Designs</Link>, "sub2", <AppstoreOutlined />, [
+    getItem(<Link to="/course">Ui/Ux</Link>, "9"),
   ]),
 ];
 
@@ -50,7 +49,7 @@ const Navigation = () => {
   return (
     <div
       style={{
-        width: 256,
+        width: 250,
       }}
     >
       <Button

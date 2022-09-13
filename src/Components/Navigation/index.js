@@ -1,18 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navigations from './nav';
-      
+import Navigations from "./nav";
+
 const Navigation = () => {
   return (
     <div>
       <nav>
         <div className="logo">
           {" "}
-          <Link to="/">TECHHUB</Link>
+          <Link to="/" style={{ fontSize: "20px" }}>
+            TECHHUB
+          </Link>
         </div>
         <ul>
           <li>
             <Link to="/register">Registration</Link>
+          </li>
+          <li>
+            <Link to="/course">Courses</Link>
           </li>
           <li>
             <Link to="/contact">Contact Us</Link>

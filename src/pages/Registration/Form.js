@@ -4,19 +4,26 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { registerUser } from "../../features/regSlice";
 import { resetState } from "../../features/regSlice";
+
+
 const RegistrationForm = () => {
   const auth = useSelector((state) => state.auth);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+
   useEffect(() => {
     if (auth?.registerStatus === "success") {
       navigate("/");
+      dispatch(resetState());
     }
-    dispatch(resetState());
+
   }, [dispatch, auth?.registerStatus, navigate]);
+
   const handleSubmit = (values) => {
-    dispatch(registerUser(values));
+    dispatch(registerUser(values))
   };
+
 
   return (
     <Form
@@ -68,7 +75,6 @@ const RegistrationForm = () => {
           },
         ]}
       >
-        <p>Virtual and physical class</p>
         <Input />
       </Form.Item>
       <Form.Item
@@ -95,11 +101,17 @@ const RegistrationForm = () => {
       >
         <Input />
       </Form.Item>
-
+      <p>
+        <span style={{ color: "red" }}> preference: </span>Virtual and physical
+        class?
+      </p>
       <Form.Item
-        label="preference"
+     
         name="prefference"
-        placeholder="online or offline"
+       label="preference"
+        style={{
+
+        }}
         rules={[
           {
             required: true,
@@ -109,6 +121,7 @@ const RegistrationForm = () => {
       >
         <Input />
       </Form.Item>
+   
 
       <Form.Item
         wrapperCol={{
@@ -116,10 +129,13 @@ const RegistrationForm = () => {
           span: 16,
         }}
       >
-        <Button type="primary" htmlType="submit" onClick={() => dispatch()}
-        style ={{
-          marginBottom:'50px',
-        }}
+        <Button
+          type="primary"
+          htmlType="submit"
+          onClick={() => dispatch()}
+          style={{
+            marginBottom: "50px",
+          }}
         >
           Submit
         </Button>

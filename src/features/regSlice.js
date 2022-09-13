@@ -19,7 +19,7 @@ export const registerUser = createAsyncThunk(
   "user/registerUser",
   async (values, { rejectWithValue }) => {
     try {
-      let response = await axios.post(`${baseUrl}/auth/register`, values);
+      let response = await axios.post(`${baseUrl}/register`, values);
       return response.data;
     } catch (error) {
       return rejectWithValue(error.response.data);
@@ -27,19 +27,23 @@ export const registerUser = createAsyncThunk(
   }
 );
 
+export const DeleteData = createAsyncThunk("user/Delete", async (value, {rejectWithValue}) => {
+  try {
+    let response = await axios.delete(`${baseUrl}/delete/:${value}`);
+    return response
+  } catch (error) {
+     return rejectWithValue(error.response.data);
+  }
+})
+
 
 
 const regSlice = createSlice({
   name: "registration",
   initialState,
   reducers: {
-    // loadUser: (state, { payload }) => {
-    //   state.userLoaded = true;
-    //   state.completed = false;
-    //   state.registerStatus = "";
-    // },
+
     resetState: (state) => {
-   
       return initialState;
     },
   },
@@ -66,7 +70,9 @@ const regSlice = createSlice({
         registerError: payload,
       };
     },
+
+
   },
 });
-export const { loadUser, resetState } = regSlice.actions;
+export const {  resetState } = regSlice.actions;
 export default regSlice.reducer;

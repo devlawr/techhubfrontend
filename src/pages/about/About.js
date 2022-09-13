@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import { data } from "../../content_option";
 import AboutWrapper from "../../Components/aboutWrapper/AboutUsWrapper";
-import Footer from '../../Components/Footer/Footer';
+import Footer from "../../Components/Footer/Footer";
 
 const About = () => {
   return (
@@ -28,7 +28,7 @@ const About = () => {
                 Our Vision
               </Card.Title>
               <Card.Text style={{ textAlign: "justify" }}>
-                our vision is to see yputh and youger generation maximized their
+                our vision is to see youth and youger generation maximized their
                 potentials by plugging into the tech indutry.
               </Card.Text>
             </Card.Body>

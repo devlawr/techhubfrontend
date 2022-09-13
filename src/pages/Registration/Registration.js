@@ -17,6 +17,9 @@ const Registration = () => {
     if (auth?.registerStatus === "rejected") {
       toast.warning(auth?.registerError?.error, { position: "top-center" });
     }
+    if (auth?.registerStatus === "rejected") {
+      toast.warning(auth?.registerError?.errors, { position: "top-center" });
+    }
   }, [auth?.registerStatus, auth?.registerError]);
 
   return (

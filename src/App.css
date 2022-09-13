@@ -65,6 +65,7 @@ nav ul li {
   padding-top:10px;
 padding-right:20px;
 color:rgb(229, 226, 226);
+font-size: 14px;
 }
 
 .course {
@@ -421,7 +422,24 @@ background: #fafafa;
   display: flex;
   padding-top: 40px;
   justify-content: space-around;
+}
+.list-container {
+  display:flex;
+  gap:20px
+}
+  
+.list {width: 100%}
 
+
+.users {
+  display:flex;
+  justify-content: space-between;
+}
+
+.dbRes {
+  text-transform: capitalize;
+  text-align: center;
+  color:rgb(49, 145, 224);
 }
 
 @media only screen and (min-width: 300px) and (max-width: 650px) {
@@ -429,6 +447,9 @@ background: #fafafa;
     display: block;
   }
 
+.side-nav {
+  display:none
+}
   .testimony {
     display: block;
     width: 100%;
@@ -464,6 +485,9 @@ background: #fafafa;
   .error{
     display: block;
   }
+    .side-nav {
+      display: none
+    }
 .backdrop {
   height:100vh;
 }
@@ -474,6 +498,7 @@ nav {
   top:100px;
   padding-left:30%;
 }
+
 .join p{
 margin-top: 150px;
 }
@@ -591,6 +616,9 @@ padding:0.5rem
 .backdrop {
     height: 100vh;
   }
+  .side-nav{
+    display:none;
+  }
 
   nav {
     display: none;
@@ -602,7 +630,7 @@ padding:0.5rem
   }
 
   .join p {
-    margin-top: 150px;
+    margin-top: 114px;
   }
 
   .skill {
@@ -632,7 +660,7 @@ padding:0.5rem
 
   .joinus {
     right:40px;
-    top: -80px;
+    top: -94px;
   }
 
   .brilliance {
