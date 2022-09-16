@@ -461,6 +461,24 @@ background: #fafafa;
     margin-top: 10px;
     width: 15rem;
   }
+
+         .session {
+           top: 85vh;
+           left: 31%;
+         }
+    
+         .modal {
+           position: absolute;
+           top: 50vh;
+           z-index: 99999999999999999;
+         }
+    
+         .session_form {
+           width: 70%;
+           margin: auto;
+           margin-top: 25vh;
+           padding-bottom:30px ;
+         }
 }
 
 @media only screen and (min-width: 650px) and (max-width: 800px) {
@@ -659,8 +677,7 @@ padding:0.5rem
   }
 
   .joinus {
-    right:40px;
-    top: -94px;
+    top: -110px;
   }
 
   .brilliance {

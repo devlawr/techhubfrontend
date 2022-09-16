@@ -22,13 +22,14 @@ color:black;
      font-weight: 600;
      cursor: pointer;
  }
+
+ .session_form {
+     width: 70%;
+     margin: auto;
+     margin-top: 15vh;
+     padding-bottom: 30px;
+     padding-right: 10%;
+ }
  @media only screen and (min-width: 300px) and (max-width: 650px) {
-    .session{
-        left:20%;
-    }
-    .modal {
-        position: absolute;
-        top:200px;
-        z-index: 99999999999999999;
-    }
+ 
  }

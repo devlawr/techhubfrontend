@@ -71,12 +71,13 @@ const SessionForm = () => {
       </div>
    
       <div
-        style={{
-          width: "50%",
-          margin: "auto",
-          marginTop: "40px",
-          paddingRight: "100px",
-        }}
+        // style={{
+        //   width: "50%",
+        //   margin: "auto",
+        //   marginTop: "40px",
+        //   paddingRight: "100px",
+        // }}
+        className="session_form"
       >
         <Form
           {...layout}
