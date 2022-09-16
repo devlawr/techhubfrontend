@@ -1,10 +1,10 @@
 [build]
   command = "npm run build"
-  publish="techhub/build"
-  base = "techhub"
+  publish="build"
+  base = "techhubfrontend"
 
 
-  publish = "techhub/build"
+  publish = "build"
 
 
   [[redirects]]
