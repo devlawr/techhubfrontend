@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
-  publish="techhubfrontend/build/"
-  base = "techhubfrontend/"
+  publish="build/"
+  base = "/"
 
 
 
