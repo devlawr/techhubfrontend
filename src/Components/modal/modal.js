@@ -9,8 +9,7 @@ const Modal = (props) => {
       <Paragraph>{props.conneciton}</Paragraph>
       <Paragraph>{props.zoom}</Paragraph>
       <Paragraph>{props.vscode}</Paragraph>
-      <Paragraph>       
-      </Paragraph>
+      <Paragraph></Paragraph>
     </div>
   );
 };

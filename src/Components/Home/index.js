@@ -29,6 +29,9 @@ const Home = () => {
         word={data.word}
       />
       <main>
+        <session>
+          <p className="powered_by">powered by the RCCG Light Assembly(people of dominion)</p>
+        </session>
         <div className="first-section">
           <div className="launch">
             <p>

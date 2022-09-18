@@ -10,8 +10,8 @@ color:black;
  }
  .session {
      position: absolute;
-     top: 514px;
-     left: 154px;
+     top: 505px;
+     left: 187px;
      background: #56C870;
      height: 50px;
      width: 150px;
@@ -23,13 +23,35 @@ color:black;
      cursor: pointer;
  }
 
+ .section_title {
+    text-align:center;
+    margin-top:70px;
+
+ }
+
+ .ant-modal-wrap {
+     position: absolute !important;
+     top: 100px !important;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     overflow: auto;
+     outline: 0;
+     z-index: 999999999999999999;
+ }
  .session_form {
-     width: 70%;
-     margin: auto;
-     margin-top: 15vh;
-     padding-bottom: 30px;
-     padding-right: 10%;
+    width: 70%;
+        /* margin: auto; */
+        margin-left: 75px;
+        margin-top: 19vh;
+        padding-bottom: 30px;
+        padding-right: 6%;
  }
  @media only screen and (min-width: 300px) and (max-width: 650px) {
- 
+.section_title {
+        text-align: center;
+        margin-top: 70px;
+        width: 70%;
+        margin-left: 70px;
+    }
  }

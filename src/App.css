@@ -128,7 +128,7 @@ z-index: 0;
   border-radius: 50px;
   color:white;
   top: 210px;
-  margin-left:20rem;
+  margin-left:25rem;
   cursor: pointer;
 }
 .joinus p {
@@ -469,7 +469,7 @@ background: #fafafa;
     
          .modal {
            position: absolute;
-           top: 50vh;
+           top: 150vh;
            z-index: 99999999999999999;
          }
     
@@ -543,8 +543,8 @@ margin-top: 150px;
 
 }
 .joinus {
-  margin-left:6rem;
-  top:-60px;
+  margin-left:2rem;
+  top: -33px;
 }
 .brilliance {
   font-style: italic;
@@ -676,9 +676,7 @@ padding:0.5rem
     align-items: center;
   }
 
-  .joinus {
-    top: -110px;
-  }
+ 
 
   .brilliance {
     font-style: italic;

@@ -61,7 +61,7 @@ const SessionForm = () => {
   };
   return (
     <>
-      <div style={{ textAlign: "center", marginTop: "70px" }}>
+      <div className="section_title">
         <Title>Book a free session now!</Title>
         <div>
           {session?.registerStatus === "pending" ? (
