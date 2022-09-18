@@ -185,7 +185,7 @@ margin-top:3rem;
 .future {
  width:50%;
 }
-.future h3 {
+.future  h3 {
   text-align: center;
   padding-top:80px;
   font-family: 'Inria Serif',
@@ -404,11 +404,6 @@ background: #fafafa;
   height: 100%;
   background: #f3f4f4;
 }
-  h3 {
-    padding-top: 7rem;
-    text-align: center;
-    color: rgb(39, 156, 245)
-  }
 
   .staff p {
     text-align: center;

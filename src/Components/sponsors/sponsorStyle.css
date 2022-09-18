@@ -1,0 +1,40 @@
+ h3 {
+    padding-top: 3rem;
+    text-align: center;
+    color: rgb(39, 156, 245);
+    margin-bottom: 30px;
+  }
+  .name {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .sponsors_wrapper {
+    height: auto;
+    height:40vh;
+  }
+  .container {
+    display:flex;
+    gap:30px;
+    justify-content: center;
+    text-align: center;
+    padding:20px;
+  }
+  .sponsors_img {
+width:100px;
+height:100px;
+  }
+  .pioneer_img {
+    
+width: 100px;
+  height: 100px;
+  }
+.name {
+  text-align: center;
+}
+  .title {
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(39, 156, 245);
+
+  }
