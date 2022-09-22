@@ -431,7 +431,7 @@ background: #fafafa;
 
 @media only screen and (min-width: 300px) and (max-width: 650px) {
   .wrappers {
-    display: block;
+    flex-direction: column;
   }
   
   .list_nav {
