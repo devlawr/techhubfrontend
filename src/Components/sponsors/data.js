@@ -3,7 +3,7 @@ export const datas = [
     id: 1,
     title: "pioneer",
     className:'pioneer_img',
-    name:'light house assembly(people of dominion)',
+    name:'light assembly(people of dominion)',
     img_url:
       "https://res.cloudinary.com/aaaaaaaa123/image/upload/v1663519303/techhub/redeem_h1ulii.jpg",
   },

@@ -1,23 +1,23 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 
 const Footer = () => {
   return (
     <footer>
-      <div className='footer'>
-    
+      <div className="footer">
         <div className="courses">
-          <ul>
-            <li>Html and css</li>
-            <li>Javascript</li>
-            <li>UI/UX</li>
-            <li>ReactJs</li>
-            <li>Html and css</li>
-          </ul>
+          <p>
+            <Link to="/course">courses</Link>
+          </p>
         </div>
         <div className="policies">
-          <p>Terms and Conditions</p>
-          <p>Privacy Policy</p>
+          <p>
+            <Link to="/login"> Terms and Conditions</Link>
+          </p>
+          <p>
+            <Link to="/login">Privacy Policy</Link>
+          </p>
         </div>
       </div>
     </footer>

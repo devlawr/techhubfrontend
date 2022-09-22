@@ -61,8 +61,8 @@ nav ul {
 }
 
 nav ul li {
-  list-style-type: none;
-  padding-top:10px;
+list-style-type: none;
+padding-top:10px;
 padding-right:20px;
 color:rgb(229, 226, 226);
 font-size: 14px;
@@ -84,7 +84,7 @@ font-size: 14px;
 
 .backdrop {
 background: #173B3f;
-height: 115vh;
+height: 110vh;
 opacity: 0.6;
 position: absolute;
 top:0;
@@ -364,16 +364,8 @@ flex:1;
 padding-top: 50px;
 justify-content: center;
 }
-.courses ul {
-  list-style: none;
-}
-.courses ul li {
-  padding: 0.5rem;
-  font-weight: 500;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: capitalize;
-  font-size: 14px;
-  text-align: center;
+.courses p {
+  padding-left:30px;
 }
 .social-media {
   flex:1;
@@ -441,6 +433,10 @@ background: #fafafa;
   .wrappers {
     display: block;
   }
+  
+  .list_nav {
+    display:none;
+  }
 
 .side-nav {
   display:none
@@ -480,6 +476,11 @@ background: #fafafa;
   .wrappers {
     display: flex;
   }
+        
+    
+        .list_nav {
+          display: none;
+        }
 
   .testimony {
     display: block;
@@ -498,6 +499,12 @@ background: #fafafa;
   .error{
     display: block;
   }
+        .list {
+          margin-left: 10%;
+        }
+        .list_nav {
+          display: none;
+        }
     .side-nav {
       display: none
     }
@@ -534,7 +541,7 @@ margin-top: 150px;
  display:flex;
 
 }
-.courses{
+.courses p {
 
 }
 .joinus {
@@ -629,6 +636,11 @@ padding:0.5rem
 .backdrop {
     height: 100vh;
   }
+  .list {margin-left: 10%;}
+
+        .list_nav {
+          display: none;
+        }
   .side-nav{
     display:none;
   }

@@ -6,7 +6,7 @@ const initialState = {
   userSession: {},
   registerStatus: "",
   registerError: "",
-
+  deleteSessionStatus: "",
   message: "",
   loading: false,
   show: false,
@@ -18,6 +18,18 @@ export const registerSession = createAsyncThunk(
   async (values, { rejectWithValue }) => {
     try {
       let response = await axios.post(`${baseUrl}/session`, values);
+      return response.data;
+    } catch (error) {
+      return rejectWithValue(error.response);
+    }
+  }
+);
+
+export const deleteSession = createAsyncThunk(
+  "delete/session",
+  async (values, { rejectWithValue }) => {
+    try {
+      let response = await axios.delete(`${baseUrl}/session/${values}`);
       return response.data;
     } catch (error) {
       return rejectWithValue(error.response);
@@ -52,6 +64,25 @@ const sessionSlice = createSlice({
         ...state,
         registerError: payload,
         registerStatus: "rejected",
+        message: "rejected",
+        completed: false,
+      };
+    },
+    [deleteSession.pending]: (state, { payload }) => {
+      return { ...state, deleteSessionStatus: "pending", loading: true };
+    },
+    [deleteSession.fulfilled]: (state, { payload }) => {
+      return {
+        ...state,
+        deleteSessionStatus: payload.message,
+        loading: false,
+        completed: true,
+      };
+    },
+    [deleteSession.rejected]: (state, { payload }) => {
+      return {
+        ...state,
+        deleteSessionStatus: "rejected",
         message: "rejected",
         completed: false,
       };

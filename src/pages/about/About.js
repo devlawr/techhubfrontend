@@ -28,7 +28,7 @@ const About = () => {
                 Our Vision
               </Card.Title>
               <Card.Text style={{ textAlign: "justify" }}>
-                our vision is to see youth and youger generation maximized their
+                Our vision is to see youth and youger generation maximized their
                 potentials by plugging into the tech indutry.
               </Card.Text>
             </Card.Body>
@@ -64,8 +64,13 @@ const About = () => {
                 Company History
               </Card.Title>
               <Card.Text style={{ textAlign: "justify" }}>
-                Coding Techhub is Tech enterprice powered by the Redeemed
-                Christian Church of God with the aim of building the youth and
+                <span
+                  style={{ fontWeight: "bold", color: "rgb(49, 145, 224)" }}
+                >
+                  Coding Techhub
+                </span>{" "}
+                is Tech enterprise powered by the Redeemed Christian Church of
+                God(Light Assembly) with the aim of building the youth and
                 youger generation to attain stardom in the Tech world, we teach
                 with hands on pactice on highlighted tech languages following an
                 easy to grab course outline from basic to advance and also train

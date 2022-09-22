@@ -4,9 +4,9 @@ import axios from "axios";
 import { Space, Table, Modal, Typography } from "antd";
 import { useDispatch } from "react-redux";
 import { baseUrl } from "../../Components/common/common";
-import { DeleteData } from "../../features/deleteSlice";
+import { deleteSession } from "../../features/sessionSlice";
 const { Paragraph } = Typography;
-const { Column, ColumnGroup } = Table;
+const { Column } = Table;
 
 const UserTable = () => {
   const dispatch = useDispatch();
@@ -20,7 +20,7 @@ const UserTable = () => {
 
   useEffect(() => {
     axios
-      .get(`${baseUrl}/booking/list`)
+      .get(`${baseUrl}/session/list`)
       .then((res) => {
         setDatas(res);
       })
@@ -31,7 +31,6 @@ const UserTable = () => {
   }, []);
 
   let result = datas?.data?.payload;
-
   const showModal = () => {
     setIsModalOpen(true);
   };
@@ -42,16 +41,16 @@ const UserTable = () => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
-  const handleDeleteUser = (user) => {
-    dispatch(DeleteData(user));
+  const handleDeleteUser = (value) => {
+    dispatch(deleteSession(value));
     window.location.reload(false);
   };
   return (
     <>
-      <Table dataSource={result}>
-        <ColumnGroup title="Name">
-          <Column title="Name" dataIndex="firstname" key="firstname" />
-        </ColumnGroup>
+      <Table dataSource={result} key = {result}>
+
+          <Column title="Name" dataIndex="name" key="name" />
+ 
         <Column title="Email" dataIndex="email" key="email" />
         <Column title="Mobile" dataIndex="mobile" key="mobile" />
         <Column title="Country" dataIndex="country" key="country" />
@@ -88,8 +87,7 @@ const UserTable = () => {
                 visible={isModalOpen}
                 onCancel={handleCancel}
               >
-                <Paragraph>First Name: {details.firstname}</Paragraph>
-                <Paragraph>last Name Name: {details.lastname}</Paragraph>
+                <Paragraph>Full Name: {details.name}</Paragraph>
                 <Paragraph>Email: {details.email}</Paragraph>
                 <Paragraph>Mobile: {details.mobile}</Paragraph>
                 <Paragraph>Country: {details.country}</Paragraph>
