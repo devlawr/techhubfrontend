@@ -1,6 +1,6 @@
 const contactConfig = {
-  YOUR_EMAIL: "rccglaakoka@gmail.com",
-  YOUR_FONE: "+2348169487853 or +2347015009775",
+  YOUR_EMAIL: "olorunwalaw@gmail.com",
+  YOUR_FONE: "+2347015009775",
   description:
     "Kindly send me a message and i will respond to you as soon as possible.",
   // creat an emailjs.com account
@@ -17,8 +17,8 @@ const data = {
   join: "Join TECHHUB. the training ground for Technologist",
   mission: "Our mission is to connect brilliance with opportunity",
   race: "Irrespective of race, gender, and geography.",
-  word:"Join Us",
-  session:'Book a free session'
+  word:"Buy a Course",
+  session:'Book a live Coach or Mentor'
 };
 
 

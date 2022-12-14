@@ -85,7 +85,7 @@ font-size: 14px;
 .backdrop {
 background: #173B3f;
 height: 110vh;
-opacity: 0.6;
+opacity: 0.1;
 position: absolute;
 top:0;
 bottom:0;
@@ -105,7 +105,6 @@ z-index: 0;
   text-transform: capitalize;
   font-size:40px;
   top:200px;
-  margin-left:2rem;
   text-align: left;
 
 }
@@ -127,8 +126,8 @@ z-index: 0;
   background: #56C870;
   border-radius: 50px;
   color:white;
-  top: 210px;
-  margin-left:25rem;
+  top: 206px;
+  margin-left:18rem;
   cursor: pointer;
 }
 .joinus p {
@@ -378,7 +377,7 @@ background: #fafafa;
 }
 .contact-us {
 
-  width:50%;
+  width:80%;
   margin: auto;
 }
 .wrappers {
@@ -429,7 +428,7 @@ background: #fafafa;
   color:rgb(49, 145, 224);
 }
 
-@media only screen and (min-width: 300px) and (max-width: 650px) {
+@media only screen and (min-width: 256px) and (max-width: 650px) {
   .wrappers {
     flex-direction: column;
   }
@@ -453,10 +452,10 @@ background: #fafafa;
     width: 15rem;
   }
 
-         .session {
-           top: 85vh;
-           left: 31%;
-         }
+    .session {
+      top: 85vh;
+      left: 31%;
+    }
     
          .modal {
            position: absolute;
@@ -541,12 +540,10 @@ margin-top: 150px;
  display:flex;
 
 }
-.courses p {
 
-}
 .joinus {
-  margin-left:2rem;
-  top: -33px;
+  margin-left:5rem;
+  top: -93px;
 }
 .brilliance {
   font-style: italic;

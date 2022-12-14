@@ -7,7 +7,6 @@ import leftImg from "../../images/visual.jpg";
 import StepP from "./Step";
 import Skills from "../skills/skils";
 import Footer from "../Footer/Footer";
-import Sponsors from "../sponsors/Sponsors";
 import Wrapper from "../Wrapper/Wrapper";
 import { data } from "../../content_option";
 import "./Home.css";
@@ -29,11 +28,7 @@ const Home = () => {
         word={data.word}
       />
       <main>
-        <session>
-          <p className="powered_by">
-            powered by the RCCG Light Assembly(people of dominion)
-          </p>
-        </session>
+
         <div className="first-section">
           <div className="launch">
             <p>
@@ -88,9 +83,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
-      <Sponsors />
-      </section>
+
       <section>
         <Skills />
       </section>

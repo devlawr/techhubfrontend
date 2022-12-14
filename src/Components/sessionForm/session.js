@@ -62,7 +62,7 @@ const SessionForm = () => {
   return (
     <>
       <div className="section_title">
-        <Title>Book a free session now!</Title>
+        <Title>Book a live coach now!</Title>
         <div>
           {session?.registerStatus === "pending" ? (
             <ClipLoader color="#6ed8af" />

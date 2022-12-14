@@ -92,7 +92,7 @@ const ContactUs = () => {
       ) : null}
 
       <div>
-        <p style={{color:'red', textAlign:'center',fontWeight:'bold',paddingLeft:'10%'}}>
+        <p style={{color:'teal', textAlign:'center',fontWeight:'bold',paddingLeft:'5%'}}>
           Kindly Drop a message and we'll respond to you as soon as posible or
           call us on {contactConfig.YOUR_FONE}
         </p>

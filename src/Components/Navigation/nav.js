@@ -40,7 +40,7 @@ const items = [
 ];
 
 const Navigation = () => {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
 
   const toggleCollapsed = () => {
     setCollapsed(!collapsed);
@@ -50,6 +50,7 @@ const Navigation = () => {
     <div
       style={{
         width: 250,
+        marginRight:"100px",
       }}
     >
       <Button
@@ -63,11 +64,15 @@ const Navigation = () => {
       </Button>
       <Menu
         defaultSelectedKeys={["1"]}
-        defaultOpenKeys={["sub1"]}
+        // defaultOpenKeys={["sub1"]}
         mode="inline"
         theme="dark"
         inlineCollapsed={collapsed}
         items={items}
+        style ={{
+          marginLeft:-90,
+          paddingLeft:90,
+        }}
       />
     </div>
   );

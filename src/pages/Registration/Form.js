@@ -102,7 +102,7 @@ const RegistrationForm = () => {
         <Input />
       </Form.Item>
       <p>
-        <span style={{ color: "red" }}> preference: </span>Virtual and physical
+        <span style={{ color: "red" }}> preference: </span>Virtual 
         class?
       </p>
       <Form.Item

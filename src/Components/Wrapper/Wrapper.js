@@ -46,7 +46,7 @@ const Wrapper = (props) => {
       </div>
       <div className="modal">
         <Modal
-          title="Requirements for free sessions with the tutor vitually"
+          title="A must have to book a live coach or mentor"
           open={isModalOpen}
           onOk={handleOk}
           visible={isModalOpen}

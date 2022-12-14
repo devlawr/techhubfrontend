@@ -1,12 +1,12 @@
 import React from "react";
 import { Typography } from "antd";
-const { Title, Paragraph } = Typography;
+const {  Paragraph,Text } = Typography;
 const Modal = (props) => {
   return (
     <div>
-      <Title>Laptop</Title>
+      <Text>Laptop</Text>
 
-      <Paragraph>{props.conneciton}</Paragraph>
+      <Paragraph>{props.connection}</Paragraph>
       <Paragraph>{props.zoom}</Paragraph>
       <Paragraph>{props.vscode}</Paragraph>
       <Paragraph></Paragraph>
